@@ -1,6 +1,6 @@
 FROM stereolabs/zedbot:zed-ros2-wrapper_u22_cuda117_humble_
 
-RUN cd ~/ros2_ws/src/ && git clone https://github.com/stereolabs/zed-ros2-examples.git
+RUN cd ~/ros2_ws/src/ && git clone https://github.com/TransMisiones-Centauro/zed-ros2-examples.git
 
 RUN apt-get update \
  && cd ~/ros2_ws \
