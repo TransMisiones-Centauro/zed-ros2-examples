@@ -15,4 +15,6 @@ RUN . /opt/ros/$ROS_DISTRO/setup.sh \
  && colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release \
     --packages-skip zed_rgb_convert
     
-
+RUN apt-get update \
+ && apt install -y ros-humble-rtabmap-ros \
+ && rm -rf /var/lib/apt/lists/*
